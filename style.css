@@ -2,11 +2,37 @@ body {
   margin: 0px;
   padding: 0px;
 
-  background-color: gray;
+  background-color: black;
+  height: 200%;
+}
+
+h1, span {
+  color: ffffff;
+  font-family: 'Courier New';
 }
 
 #particles-js {
   /* background-image: url("images/image1.jpg"); */
   /* background-size: cover; */
-  height: 200%;
+  height: 100%;
+  position: fixed; top: 0;
+}
+
+#description {
+  background-color: gray;
+  height: 500px;
+
+  position: relative;
+  top: 45%;
+}
+
+#title {
+  top: 100px;
+  position: relative;
+  margin: auto;
+}
+
+.centerText {
+  text-align: center;
+  display: block
 }
