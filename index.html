@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Logicguy1</title>
+    <title>Logicguy1's Portfolio</title>
   </head>
   <body>
     <div id="particles-js">
@@ -17,7 +17,9 @@
 
     <div id="description">
       <h1 class="titleCard">About Me</h1>
-      <span id="descriptionSpan">I'm a {age} year old programmer and webdeveloper from Denmark. Most of my skills are in python programming discord bots, scripts etc   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non diam varius, efficitur metus vitae, viverra nulla. Nulla facilisi. Donec gravida nisi ac libero sollicitudin, vitae porta risus blandit. Integer elementum erat eget felis condimentum congue. Ut luctus turpis velit, id accumsan purus varius ac. Etiam quis neque vitae ligula semper scelerisque id eu turpis. Nulla pulvinar porttitor arcu feugiat mollis. Donec placerat nisl ac tellus faucibus tincidunt. Sed libero risus, placerat nec elementum vitae, feugiat id purus. In nisl sapien, luctus quis venenatis sed, finibus eu sapien. Curabitur sit amet nunc eros. </span>
+      <span class="descriptionSpan" id="replace-me1">I'm a {age} year old programmer and webdeveloper from Denmark. Most of my skills are in python programming discord bots, scripts etc.</span>
+      <span class="descriptionSpan" id="replace-me2">Most of my projects are related to maths or just handy dandy tools that i use on a daily basis. I really like challangeing myself to get better and learn new things.</span>
+      <span class="descriptionSpan" id="replace-me3">I have been coding {py} years in python spending {dpy} years coding discord bots, of wich i am fasinated by.</span>
     </div>
 
     <!-- Particles.js -->
@@ -25,10 +27,11 @@
     <script type="text/javascript" src="js/app.js"></script>
 
     <script type="text/javascript">
-      let description = document.getElementById('descriptionSpan');
-      let year = new Date().getFullYear() - 2004;
+      let year = new Date().getFullYear();
 
-      description.textContent = description.innerHTML.replace("{age}", year);
+      document.getElementById('replace-me1').textContent = document.getElementById('replace-me1').innerHTML.replace("{age}", year - 2004);
+      document.getElementById('replace-me3').textContent = document.getElementById('replace-me3').innerHTML.replace("{py}", year - 2015);
+      document.getElementById('replace-me3').textContent = document.getElementById('replace-me3').innerHTML.replace("{dpy}", year - 2016 - .5);
     </script>
 
   </body>
