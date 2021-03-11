@@ -17,12 +17,19 @@
 
     <div id="description">
       <h1 class="titleCard">About Me</h1>
-      <span></span>
+      <span id="descriptionSpan">I'm a {age} year old programmer and webdeveloper from Denmark. Most of my skills are in python programming discord bots, scripts etc   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non diam varius, efficitur metus vitae, viverra nulla. Nulla facilisi. Donec gravida nisi ac libero sollicitudin, vitae porta risus blandit. Integer elementum erat eget felis condimentum congue. Ut luctus turpis velit, id accumsan purus varius ac. Etiam quis neque vitae ligula semper scelerisque id eu turpis. Nulla pulvinar porttitor arcu feugiat mollis. Donec placerat nisl ac tellus faucibus tincidunt. Sed libero risus, placerat nec elementum vitae, feugiat id purus. In nisl sapien, luctus quis venenatis sed, finibus eu sapien. Curabitur sit amet nunc eros. </span>
     </div>
 
     <!-- Particles.js -->
     <script type="text/javascript" src="js/particles.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>
+
+    <script type="text/javascript">
+      let description = document.getElementById('descriptionSpan');
+      let year = new Date().getFullYear() - 2004;
+
+      description.textContent = description.innerHTML.replace("{age}", year);
+    </script>
 
   </body>
 </html>
