@@ -19,7 +19,7 @@ h1, span {
 }
 
 #description {
-  background-color: gray;
+  background-color: rgba(82, 38, 115, .5);
   height: 500px;
 
   position: relative;
@@ -35,4 +35,10 @@ h1, span {
 .centerText {
   text-align: center;
   display: block
+}
+
+.titleCard {
+  position: relative;
+  top: 10%;
+  left: 10%;
 }
