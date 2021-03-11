@@ -22,8 +22,8 @@ h1, span {
   background-color: rgba(82, 38, 115, .5);
   height: 500px;
 
-  position: relative;
-  top: 45%;
+  position: absolute;
+  top: 100%;
 }
 
 #title {
