@@ -21,6 +21,7 @@ h1, span {
 #description {
   background-color: rgba(82, 38, 115, .5);
   height: 500px;
+  width: 100%;
 
   position: absolute;
   top: 100%;
@@ -32,7 +33,7 @@ h1, span {
   margin: auto;
 }
 
-#descriptionSpan {
+.descriptionSpan {
   position: relative;
   top: 10%;
   left: 7%;
