@@ -19,12 +19,16 @@ h1, span {
 }
 
 #description {
-  background-color: rgba(82, 38, 115, .5);
-  height: 500px;
+  height: auto;
   width: 100%;
 
-  position: absolute;
-  top: 100%;
+  position: relative;
+  top: 50%;
+}
+
+#projects {
+  background-color: rgba(0, 0, 128 , .5);
+  width: 100%;
 }
 
 #title {
@@ -33,9 +37,18 @@ h1, span {
   margin: auto;
 }
 
+.background {
+  background-color: rgba(0, 0, 128 , .5);
+  padding-bottom: 30px;
+  padding-top: 15px;
+
+  margin-bottom: 10px;
+
+}
+
 .descriptionSpan {
   position: relative;
-  top: 10%;
+  /* top: 10%; */
   left: 7%;
   display: block;
   width: 86%;
@@ -48,8 +61,16 @@ h1, span {
 
 .titleCard {
   position: relative;
-  top: 10%;
+  /* top: 10%; */
   left: 5%;
   display: block;
   width: 86%;
+}
+
+.disable-select {
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
