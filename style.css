@@ -32,9 +32,10 @@ h1, span {
 }
 
 #title {
-  top: 100vh;
+  top: 100px;
   position: relative;
   margin: auto;
+  height: 100vh;
 }
 
 .background {
