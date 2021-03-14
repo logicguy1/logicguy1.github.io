@@ -15,6 +15,7 @@ h1, span {
   /* background-image: url("images/image1.jpg"); */
   /* background-size: cover; */
   height: 100%;
+  width: 100%;
   position: fixed; top: 0;
 }
 
