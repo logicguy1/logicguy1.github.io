@@ -15,7 +15,6 @@ h1, span {
   /* background-image: url("images/image1.jpg"); */
   /* background-size: cover; */
   height: 100%;
-  width: 100%;
   position: fixed; top: 0;
 }
 
@@ -27,16 +26,10 @@ h1, span {
   top: 50%;
 }
 
-#projects {
-  background-color: rgba(0, 0, 128 , .5);
-  width: 100%;
-}
-
 #title {
-  top: 100px;
+  top: 100vh;
   position: relative;
   margin: auto;
-  height: 100vh;
 }
 
 .background {
@@ -53,7 +46,7 @@ h1, span {
   /* top: 10%; */
   left: 7%;
   display: block;
-  width: 86%;
+  width: 54%;
 }
 
 .centerText {
@@ -75,4 +68,53 @@ h1, span {
    -khtml-user-select: none; /* Konqueror HTML */
    -moz-user-select: none; /* Firefox */
    -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.media {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+}
+.media-card {
+  height: 150px;
+  width: 500px;
+
+  border: 2px solid #fff;
+  margin: 30px;
+  padding: 10px;
+  border-radius: 30px;
+
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.media-card:hover {
+  border: 2px solid #999;
+  transition: .3s;
+}
+
+.media-image {
+  height: 100%;
+  width: auto;
+
+  padding-right: 10px;
+}
+
+.media span {
+  margin-top: 20px;
 }
